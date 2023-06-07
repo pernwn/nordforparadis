@@ -1,0 +1,146 @@
+body {
+  background-color: #DCE5E2;
+}
+
+/*Big photo*/
+#bigPhoto {
+  position: relative;
+  /*img used*/
+  background-image: url(images/portrætter/rassport2.webp);
+
+  /*specific height*/
+  min-height: 700px;
+
+
+  /*parallax scrolling effect*/
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Overskrift*/
+#bigPhoto h1 {
+  position: absolute;
+
+  color: #DCE5E2;
+  font-size: 5em;
+  text-transform: uppercase;
+  text-align: center;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
+}
+
+/*Lidt om artisten, billede og styling af billede og tekst*/
+#artist {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  height: auto;
+  padding: 5% 15%;
+}
+
+#artist img {
+  border-radius: 20px;
+}
+
+#artistTekst {
+  padding: 5%;
+}
+
+#artist p {
+  padding-bottom: 2%;
+}
+
+#portræt {
+  width: 200%;
+  padding: 5%;
+}
+
+#artistTekst>div {
+  margin-top: 5%;
+}
+
+/*Billede galleri, styling og hover effekt*/
+#billedeGalleri {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 5% 10%;
+  height: auto;
+  overflow: hidden;
+
+  background-color: rgba(77, 115, 115, 0.1);
+}
+
+#billedeGalleri div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 80%;
+
+}
+
+#billedeGalleri img {
+  margin: 15px;
+  border-radius: 10px;
+  opacity: .8;
+  width:40%;
+
+
+  transition: .5s ease-in-out;
+}
+
+#billedeGalleri img:hover {
+  opacity: 1;
+
+
+}
+
+/*Sidste sektion på siden med blurred billede og tekst*/
+
+#bg {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  text-align: center;
+
+  /*img used*/
+  background-image: url(images/lokale/bgplante2.JPG), url(images/pynt/bg.png);
+
+  height: 700px;
+  /*parallax scrolling effect*/
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: 100% 90%;
+
+}
+
+/*Teksten på baggrunden*/
+#bg-text {
+  position: relative;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 5% 10%;
+
+  text-align: center;
+
+
+}
+
+#bg-text>div {
+  padding: 3% 15% 0% 15%;
+}
+
+#bg-text p {
+  margin-bottom: 10px;
+}

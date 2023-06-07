@@ -1,0 +1,340 @@
+#frontVidContainer video,
+#om img,
+#roomTat img,
+#stemningsBilleder,
+#shop img,
+#roomPaintings img,
+img {
+    width: 100%;
+}
+
+
+/*TOPVIDEO*/
+
+
+#frontVidContainer {
+    position: relative;
+}
+
+#frontVidContainer .btn {
+    position: absolute;
+
+    top: 22em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+
+    padding: 10px 30px 10px 30px;
+    background-color: transparent;
+    text-transform: uppercase;
+
+
+}
+
+#frontVidContainer .btn:hover {
+    padding: 10px 30px 10px 30px;
+    background-color: #F59C6B;
+    text-transform: uppercase;
+
+}
+
+#ikon {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 40px;
+
+    animation: bounce 3s infinite;
+
+}
+
+@keyframes bounce {
+    0% {
+        top: 85%;
+    }
+
+    50% {
+        top: 89%;
+    }
+
+    100% {
+        top: 85%;
+    }
+}
+
+#hello {
+    position: absolute;
+
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60pt;
+
+    color: #DCE5E2;
+    text-transform: uppercase;
+}
+
+#nfp {
+    position: absolute;
+
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 54pt;
+
+    color: #DCE5E2;
+    text-transform: uppercase;
+    text-align: center;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+
+}
+
+/*PARALLAX*/
+#roomTat {
+    /*img used*/
+    background-image: url(images/lokale/rasshygge2.webp);
+
+    /*specific height*/
+    min-height: 500px;
+
+    /*parallax scrolling effect*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#stemningsBilleder {
+    /*img used*/
+    background-image: url(images/lokale/lokale3.webp);
+
+    /*specific height*/
+    min-height: 600px;
+
+
+    /*parallax scrolling effect*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*OM OS SEKTION*/
+#om {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    padding: 5% 10%;
+
+}
+
+#om>div:nth-child(2) {
+    width: 170%;
+    padding-left: 30%;
+}
+
+#om>div:nth-child(2) h1,
+#besked h1 {
+    margin-bottom: 10px;
+}
+
+#om>div:nth-child(2) p,
+#besked p {
+    margin-bottom: 5%;
+    color: #4D7373;
+}
+
+
+
+
+#shop,
+#roomPaintings {
+    position: relative;
+
+    width: 120%;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgb(77, 115, 115);
+}
+
+#shop img,
+#roomPaintings img {
+    border-radius: 20px;
+    transform: scale(1);
+    opacity: 1;
+    width: 100%;
+    transition: 1s ease-in-out;
+}
+
+#shop img:hover,
+#roomPaintings img:hover {
+    opacity: .8;
+    transform: scale(1.1);
+
+}
+
+#shop {
+    top: 3em;
+    z-index: 1;
+}
+
+#roomPaintings {
+    z-index: 0;
+    position: relative;
+    left: 15em;
+    bottom: 2em;
+}
+
+/*ARTISTERNE*/
+#artister {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+    padding-top: 12%;
+
+    text-align: center;
+    height: 10%;
+
+
+    background-image: url(images/pynt/coconut.png), url(images/pynt/bg.png);
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-size: cover;
+
+}
+
+#artister h1 {
+    margin-bottom: 5%;
+}
+
+#artistKort div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    perspective: 1000px;
+
+    margin: 10px 30px 20px 30px;
+
+    width: 80%;
+
+    transition: .5s ease-in-out;
+
+}
+
+
+.indivArtist {
+    position: relative;
+    width: 50%;
+}
+
+.artist img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+
+    border-radius: 30px 30px 10px 10px;
+
+}
+
+.artist {
+    border-radius: 30px 30px 10px 10px;
+    background-color: #4D7373;
+}
+
+.artistMere {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    padding: 4% 6% 4% 6%;
+}
+
+
+/*Hover på element 1, men andet element 2 ændres – https://codepen.io/kvana/pen/Ndgwebp*/
+.indivArtist:hover .artist img,
+.indivArtist:hover .artist h2 {
+    opacity: 0.2;
+}
+
+/*Hover på element 1, men andet element 2 ændres – https://codepen.io/kvana/pen/Ndgwebp*/
+.indivArtist:hover .artistMere {
+    opacity: 1;
+}
+
+#artistKort {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.artist>h2 {
+    color: #DCE5E2;
+    font-size: 30pt;
+
+    position: absolute;
+    top: 35%;
+}
+
+.artistTxtContainer {
+    visibility: visible;
+    position: absolute;
+    text-align: center;
+
+    color: #4D7373;
+
+
+}
+
+.artistTxtContainer p {
+    padding-top: 1em;
+    text-align: center;
+
+    color: #4D7373;
+}
+
+
+
+
+/*KONTAKT OS SEKTION*/
+#besked {
+    background-image: url(images/lokale/bgplante2.png), url(images/pynt/bg.png);
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-size: 100% 90%;
+
+
+    padding: 15%;
+
+    text-align: center;
+
+}
+
+
+#besked p {
+    padding: 0% 10%;
+}

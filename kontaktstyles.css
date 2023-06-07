@@ -1,0 +1,92 @@
+body {
+  background-color: #DCE5E2;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 5% 2% 15% 2%;
+}
+
+/*NAV A STREG UNDER AKTIV SIDE*/
+#navLaptop #navKontakt {
+  position: relative;
+  color: #dce5e2;
+}
+
+#navLaptop #navKontakt:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #dce5e2;
+  transform: scaleX(1);
+  text-decoration: underline;
+}
+
+/*LOGO*/
+#logokontakt {
+  display: flex;
+
+  align-items: center;
+  width: 15%;
+}
+
+/*INDHOLDET PÅ SIDEN*/
+#indhold {
+  display: flex;
+  justify-content: center;
+  padding-left: 10%;
+  padding-top: 5%;
+
+  text-align: center;
+}
+
+#indhold404 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+#indhold404>#txt {
+  padding: 2%;
+}
+
+#indhold404>#oplysninger {
+  margin-bottom: 3%;
+}
+
+
+
+/*HAR DU SPØRGSMÅL OG OPLYSNINGER*/
+#txt {
+  width: 40%;
+}
+
+#oplysninger {
+  width: 60%;
+}
+
+#oplysninger p {
+  font-size: 12pt;
+  font-weight: 300;
+}
+
+#oplysninger p:nth-child(4) {
+  margin-bottom: 20px;
+}
+
+#oplysninger p>a {
+  color: #4D7373;
+  text-decoration: none;
+}
+
+#oplysninger p>a:hover {
+  text-decoration: underline;
+}
