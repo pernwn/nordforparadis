@@ -29,16 +29,16 @@ img {
 
     color: #DCE5E2;
     background-color: #F59C6B;
-    border: 2px solid #F59C6B;
+    border: 1px solid transparent;
 
 
 }
 
 #frontVidContainer .btn:hover {
     padding: 10px 30px 10px 30px;
-    color: #4D7373;
-    background-color: #DCE5E2;
-    border: 2px solid #4D7373;
+    color: #F59C6B;
+    background-color: #4D7373;
+    border: 1px solid transparent;
     text-transform: uppercase;
 
 }
@@ -165,8 +165,6 @@ img {
 }
 
 
-
-
 #shop,
 #roomPaintings {
     position: relative;
@@ -236,7 +234,7 @@ img {
     align-items: center;
     perspective: 1000px;
 
-    margin: 10px 30px 20px 30px;
+    margin: 40px 30px 20px 30px;
 
     width: 80%;
 
@@ -264,26 +262,26 @@ img {
 
 .artist {
     border-radius: 30px 30px 10px 10px;
-    background-color: #4D7373;
+    background-color: #DCE5E2;
 }
 
 .artistMere {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
-    top: 50%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
 
-    padding: 4% 6% 4% 6%;
+    padding: 4% 6%;
 }
 
 
 /*Hover på element 1, men andet element 2 ændres – https://codepen.io/kvana/pen/Ndgwebp*/
 .indivArtist:hover .artist img,
 .indivArtist:hover .artist h2 {
-    opacity: 0.6;
+    opacity: 0.7;
 }
 
 /*Hover på element 1, men andet element 2 ændres – https://codepen.io/kvana/pen/Ndgwebp*/
@@ -299,10 +297,12 @@ img {
 
 .artist>h2 {
     color: #DCE5E2;
-    font-size: 30pt;
+    font-size: 25pt;
 
     position: absolute;
-    top: 35%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .artistTxtContainer {
@@ -311,7 +311,6 @@ img {
     text-align: center;
 
     color: #4D7373;
-
 
 }
 
@@ -341,5 +340,10 @@ img {
 
 
 #besked p {
-    padding: 0% 10%;
+    padding: 1% 10%;
+}
+
+#besked .btn{
+    position:relative;
+    bottom:2em;
 }

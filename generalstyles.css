@@ -74,7 +74,7 @@ footer a {
 
     color: #DCE5E2;
     background-color: #F59C6B;
-    border: 2px solid #F59C6B;
+    border: 1px solid transparent;
 
     transition: .5s ease-in-out;
 
@@ -84,9 +84,9 @@ footer a {
 
 .btn:hover,
 .artistMere:hover {
-    color: #4D7373;
-    background-color: #DCE5E2;
-    border: 2px solid #4D7373;
+    color: #F59C6B;
+    background-color: #4D7373;
+    border: 1px solid transparent;
 
     cursor: pointer;
 }
