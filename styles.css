@@ -19,21 +19,26 @@ img {
 #frontVidContainer .btn {
     position: absolute;
 
-    top: 22em;
+    top: 23em;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 18px;
 
     padding: 10px 30px 10px 30px;
-    background-color: transparent;
     text-transform: uppercase;
+
+    color: #DCE5E2;
+    background-color: #F59C6B;
+    border: 2px solid #F59C6B;
 
 
 }
 
 #frontVidContainer .btn:hover {
     padding: 10px 30px 10px 30px;
-    background-color: #F59C6B;
+    color: #4D7373;
+    background-color: #DCE5E2;
+    border: 2px solid #4D7373;
     text-transform: uppercase;
 
 }
@@ -278,7 +283,7 @@ img {
 /*Hover på element 1, men andet element 2 ændres – https://codepen.io/kvana/pen/Ndgwebp*/
 .indivArtist:hover .artist img,
 .indivArtist:hover .artist h2 {
-    opacity: 0.2;
+    opacity: 0.6;
 }
 
 /*Hover på element 1, men andet element 2 ændres – https://codepen.io/kvana/pen/Ndgwebp*/

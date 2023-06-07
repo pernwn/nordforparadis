@@ -70,11 +70,11 @@ footer a {
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 8pt;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
 
-    color: #F59C6B;
-    background-color: transparent;
-    border: 1px solid #F59C6B;
+    color: #DCE5E2;
+    background-color: #F59C6B;
+    border: 2px solid #F59C6B;
 
     transition: .5s ease-in-out;
 
@@ -84,9 +84,9 @@ footer a {
 
 .btn:hover,
 .artistMere:hover {
-    color: #DCE5E2;
-    background-color: #F59C6B;
-    border: 1px solid transparent;
+    color: #4D7373;
+    background-color: #DCE5E2;
+    border: 2px solid #4D7373;
 
     cursor: pointer;
 }

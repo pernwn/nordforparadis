@@ -16,12 +16,12 @@ main p {
 }
 
 /*NAV A STREG UNDER VED AKTIV SIDE*/
-#navLaptop .nav:first-child {
+#navLaptop .nav:nth-child(4) {
     position: relative;
     color: #dce5e2;
 }
 
-#navLaptop .nav:first-child:before {
+#navLaptop .nav:nth-child(4):before {
     content: "";
     position: absolute;
     display: block;
