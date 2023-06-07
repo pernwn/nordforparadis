@@ -18,10 +18,10 @@ header {
 
 #navLaptop {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 
-  padding: 2% 20%;
+  padding: 2% 10%;
   background-color: #4D7373;
 
   height: 100px;
@@ -32,8 +32,8 @@ header {
   position: relative;
   color: #DCE5E2;
   text-decoration: none;
-
 }
+
 
 
 #navLaptop .nav::before {
@@ -56,7 +56,8 @@ header {
 
 
 #logo {
-  width: 6%;
+  width: 5%;
+  margin-right:50%;
 }
 
 /*FOOTER STYLES*/
