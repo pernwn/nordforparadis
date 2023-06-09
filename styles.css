@@ -10,8 +10,6 @@ img {
 
 
 /*TOPVIDEO*/
-
-
 #frontVidContainer {
     position: relative;
 }
@@ -343,7 +341,234 @@ img {
     padding: 1% 10%;
 }
 
-#besked .btn{
-    position:relative;
-    bottom:2em;
+#besked .btn {
+    position: relative;
+    bottom: 2em;
+}
+
+/*MOBIL*/
+@media screen and (max-width:910px) {
+    /*TOPVIDEO*/
+
+    #frontVidContainer .btn {
+        top: 12em;
+        font-size: 8pt;
+
+        padding: 5px 10px;
+    }
+
+
+    #ikon {
+        font-size: 25px;
+    }
+
+
+    #hello {
+        top:40%;
+        font-size: 20pt;
+
+    }
+
+    #nfp {
+        top:35%;
+        font-size: 20pt;
+        line-height: 1.2em;
+    }
+
+
+    /*PARALLAX*/
+    #roomTat {
+        /*img used –– TODO: NYT BILLEDE*/
+        background-image: url(images/lokale/rasshygge2.webp);
+        min-height: 200px;
+
+    }
+
+    #stemningsBilleder {
+        /*img used --- TODO: NY BILLEDE*/
+        background-image: url(images/lokale/lokale3.webp);
+
+        /*specific height*/
+        min-height: 300px;
+    }
+
+    /*OM OS SEKTION*/
+    #om {
+
+        padding: 10% 8%;
+
+    }
+
+    #om>div:nth-child(2) {
+        width: 150%;
+        padding-left: 0%;
+  
+    }
+
+    #om>div:nth-child(2) h1,
+    #besked h1 {
+        margin-bottom: 2%;
+    }
+
+    #om>div:nth-child(2) p,
+    #besked p {
+        margin-bottom: 10%;
+    }
+
+
+    #shop {
+        top:0em;
+        border-radius: 12px;
+        z-index: 1;
+        width:80%;
+ 
+    }
+
+    #roomPaintings {
+      display: none;
+    }
+
+    /*ARTISTERNE*/
+    #artister {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10%;
+        padding-top: 12%;
+
+        text-align: center;
+        height: 10%;
+
+
+        background-image: url(images/pynt/coconut.png), url(images/pynt/bg.png);
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+        background-size: cover;
+
+    }
+
+    #artister h1 {
+        margin-bottom: 5%;
+    }
+
+    #artistKort div {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        perspective: 1000px;
+
+        margin: 40px 30px 20px 30px;
+
+        width: 80%;
+
+
+    }
+
+
+    .indivArtist {
+        position: relative;
+        width: 50%;
+    }
+
+    .artist img {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+
+        border-radius: 30px 30px 10px 10px;
+
+    }
+
+    .artist {
+        border-radius: 30px 30px 10px 10px;
+        background-color: #DCE5E2;
+    }
+
+    .artistMere {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        padding: 4% 6%;
+    }
+
+
+    /*Hover på element 1, men andet element 2 ændres – https://codepen.io/kvana/pen/Ndgwebp*/
+    .indivArtist:hover .artist img,
+    .indivArtist:hover .artist h2 {
+        opacity: 0.7;
+    }
+
+    /*Hover på element 1, men andet element 2 ændres – https://codepen.io/kvana/pen/Ndgwebp*/
+    .indivArtist:hover .artistMere {
+        opacity: 1;
+    }
+
+    #artistKort {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .artist>h2 {
+        color: #DCE5E2;
+        font-size: 25pt;
+
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .artistTxtContainer {
+        visibility: visible;
+        position: absolute;
+        text-align: center;
+
+        color: #4D7373;
+
+    }
+
+    .artistTxtContainer p {
+        padding-top: 1em;
+        text-align: center;
+
+        color: #4D7373;
+    }
+
+
+
+
+    /*KONTAKT OS SEKTION*/
+    #besked {
+        background-image: url(images/lokale/bgplante2.png), url(images/pynt/bg.png);
+        background-repeat: no-repeat;
+        background-blend-mode: overlay;
+        background-size: 100% 90%;
+
+
+        padding: 15%;
+
+        text-align: center;
+
+    }
+
+
+    #besked p {
+        padding: 1% 10%;
+    }
+
+    #besked .btn {
+        position: relative;
+        bottom: 2em;
+    }
 }

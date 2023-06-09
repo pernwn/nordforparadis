@@ -1,3 +1,5 @@
+
+
 a {
   font-family: "espiritu", sans-serif;
   font-size: 1em;
@@ -108,3 +110,81 @@ footer h3 {
 .fa-square-facebook:hover {
   color: #F59C6B;
 }
+
+/*MOBIL HEADERFOOTER*/
+@media screen and (max-width:910px) {
+  #navLaptop {
+      display: none;
+  }
+
+  #navMobile {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 2% 5%;
+      background-color: #4D7373;
+
+      height: 100%;
+  }
+
+  header {
+      background-color: #4D7373;
+  }
+
+
+  /*HEADER*/
+  header {
+      position: fixed;
+      background-color: #4D7373;
+      width: 100%;
+      z-index: 9;
+  }
+
+
+  #logo {
+      width: 10%;
+      margin-right: 50%;
+  }
+
+  /*FOOTER STYLES*/
+  footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: auto;
+      padding: 10%;
+
+
+      background-color: #4D7373;
+
+  }
+
+  footer a {
+      text-decoration: none;
+  }
+
+  footer a:hover {
+      text-decoration: underline;
+  }
+
+  footer p {
+      line-height: 15px;
+  }
+
+  footer h3 {
+      font-weight: 150;
+  }
+
+  #footerLogo {
+      width: 7%;
+  }
+
+  .fa-square-instagram,
+  .fa-square-facebook {
+      padding-top: 3%;
+      padding-right: 2%;
+
+  }
+}
+

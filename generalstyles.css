@@ -11,6 +11,14 @@ html {
     max-width: 100%;
 }
 
+#navLaptop {
+    display: block;
+}
+
+#navMobile {
+    display: none;
+}
+
 body {
     background-color: #DCE5E2;
     color: #4D7373;
@@ -89,4 +97,56 @@ footer a {
     border: 1px solid transparent;
 
     cursor: pointer;
+}
+
+/*MOBIL*/
+@media screen and (max-width:910px) {
+    #navLaptop {
+        display: block;
+    }
+
+    #navMobile {
+        display: none;
+    }
+
+    main {
+        height: auto;
+        top: 5.5em;
+    }
+
+
+    main h1 {
+        font-size: 1em;
+        margin-bottom: 5px;
+
+    }
+
+    main h2,
+    footer h3,
+    main h3 {
+        font-size: 0.8em;
+
+    }
+
+    main p,
+    footer p {
+        font-size: .6em;
+
+       
+    }
+
+    footer p,
+    footer a {
+        color: #DCE5E2;
+    }
+
+    .btn,
+    .artistMere {
+        border-radius: 7px;
+        font-size: 5pt;
+        padding: 7px;
+
+    }
+
+
 }
