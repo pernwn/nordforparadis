@@ -118,6 +118,7 @@ footer a {
     main h1 {
         font-size: 1em;
         margin-bottom: 5px;
+        line-height: 20px;
 
     }
 
@@ -125,14 +126,15 @@ footer a {
     footer h3,
     main h3 {
         font-size: 0.8em;
+        line-height: 15px;
 
     }
 
     main p,
     footer p {
         font-size: .6em;
+        font-weight: 400;
 
-       
     }
 
     footer p,
