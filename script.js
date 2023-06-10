@@ -44,7 +44,7 @@ function changeTxt() {
 
 
 
-//Aktiverer burgermenu
+//Aktiverer burgermenu TODO:
 function menuFunction() {
     alert("menufunction called!");
     location.replace("./burgermenu.html");
