@@ -1,5 +1,6 @@
 const hello = document.getElementById("hello");
 const nfp = document.getElementById("nfp");
+const burger = document.querySelector("fa-solid");
 
 
 //Tryk på pil og scroll ned til om sektion
@@ -38,6 +39,15 @@ function greetMe() {
 function changeTxt() {
     nfp.style.display = "block";
     hello.style.display = "none";
+}
+
+
+
+
+//Aktiverer burgermenu
+function menuFunction() {
+    alert("menufunction called!");
+    location.replace("./burgermenu.html");
 }
 
 
