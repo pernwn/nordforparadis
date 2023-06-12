@@ -129,6 +129,34 @@ footer h3 {
   }
 
 
+  #burgerMenu{
+    height:auto;
+    background-color: #4D7373;
+    padding: 150%;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+
+    position: absolute;
+
+    top: 500%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+  #logoNav{
+    width:100%;
+  }
+
+  #navMobile a {
+    position: relative;
+    color: #DCE5E2;
+    text-decoration: none;
+  }
 
 
   /*HEADER*/
