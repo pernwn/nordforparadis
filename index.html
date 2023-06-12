@@ -53,12 +53,14 @@
     <header>
         <!--Tilføjelse af responsive-->
         <nav id="navMobile">
-            <div id="logo"><a href="index.html"><img src="images/misc/nfplogomobil-lys.png" alt="NFP logo"></a></div>
+            <div class="logo" id="mobilLogo"><a href="index.html"><img src="images/misc/nfplogomobil-lys.png" alt="NFP logo"></a></div>
             
-            <i class="fa-solid fa-bars fa-2x" style="color: #dce5e2;" onclick="menuFunction()"></i>
+            <i class="fa-solid fa-bars fa-2x" id="burger" style="color: #dce5e2;" onclick="menuFunction()"></i>
            
       
             <section id="burgerMenu">
+                <i class="fa-solid fa-xmark fa-2x" style="color: #dce5e2;" onclick="reload()"></i>
+
                 <div id="logoNav"><a href="index.html"><img src="images/misc/nfplogomobil-lys.png" alt="NFP logo"></a></div>
                 <a class="nav" href="kontakt.html">Booking</a>
                 <a class="nav" href="artister.html">Artister</a>
@@ -66,7 +68,7 @@
                 <a class="nav" href="faq.html">faq</a>
                 <a class="nav" href="aftercare.html">Aftercare</a>
 
-                <i class="fa-solid fa-arrow-right fa-2x" style="color: #dce5e2;" onclick="reload()"></i>
+                
             </section>
 
 
@@ -74,7 +76,7 @@
         
         <!--ÆNDRING: ekstra link, så logo flyttet til venstre-->
         <nav id="navLaptop">
-            <div id="logo"><a href="index.html"><img src="images/misc/nfplogolys.png" alt="NFP logo"></a></div>
+            <div class="logo"><a href="index.html"><img src="images/misc/nfplogolys.png" alt="NFP logo"></a></div>
 
             <a class="nav" href="kontakt.html">Booking</a>
             <a class="nav" href="artister.html">Artister</a>

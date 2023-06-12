@@ -1,6 +1,8 @@
 const hello = document.getElementById("hello");
 const nfp = document.getElementById("nfp");
 const burgerMenu = document.getElementById("burgerMenu");
+const burger = document.getElementById("burger");
+const logo = document.getElementById("mobilLogo");
 
 
 //Tryk på pil og scroll ned til om sektion
@@ -43,17 +45,32 @@ function changeTxt() {
 }
 
 
+
 //Aktiverer burgermenu
 burgerMenu.style.display = "none";
 
 function menuFunction() {
     burgerMenu.style.display = "flex";
     burgerMenu.style.animationName = "slideIn";
+
+    burger.style.visibility = "hidden";
+    burger.style.animationName = "slideOut";
+
+    logo.style.visibility = "hidden"
+    logo.style.animationName = "slideOut";
+
+
 }
 
 //Fjerner burgermenu
 function reload(){
     burgerMenu.style.animationName = "slideOut";
+
+    burger.style.visibility = "visible";
+    burger.style.animationName = "slideIn";
+
+    logo.style.visibility = "visible"
+    logo.style.animationName = "slideIn";
 
   
 }

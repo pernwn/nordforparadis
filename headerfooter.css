@@ -126,11 +126,16 @@ footer h3 {
     height: 100%;
   }
 
+  #burger, #mobilLogo{
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+
 
   #burgerMenu {
     height: auto;
     background-color: rgba(77, 115, 115,0.97);
-    padding: 150%;
+    width:100%;
 
     display: flex;
     flex-direction: column;
@@ -139,20 +144,26 @@ footer h3 {
 
 
     position: absolute;
-    top: 550%;
-    left: 50%;
+    top: -100%;
+    left:50%;
     transform: translate(-50%, -50%);
 
-    left:-100%;
+
     animation-duration: 1s;
     animation-fill-mode: forwards;
 
   }
 
-  #logoNav {
-    width: 150%;
-    margin-bottom: 3em;
+  #burgerMenu > i{
+    position:absolute;
+    left:85%;
+    bottom:98%;
 
+  }
+
+  #logoNav {
+    width: 30%;
+    margin-bottom: 3em;
   }
 
   #navMobile a {
@@ -160,27 +171,27 @@ footer h3 {
     color: #DCE5E2;
     text-decoration: none;
     margin-bottom: 1.5em;
-    font-size: 14pt;
+    font-size: 12pt;
   }
 
   @keyframes slideIn{
     from{
-      left:100%;
+      top:-100%;
       opacity:0;
     }
     to{
-      left:50%;
+      top:400%;
       opacity:1;
     }
   }
 
   @keyframes slideOut{
     from{
-      left:50%;
+      top:400%;
       opacity:1;
     }
     to{
-      left:100%;
+      top:-100%;
       opacity:0;
     }
   }
@@ -195,7 +206,7 @@ footer h3 {
   }
 
 
-  #logo {
+  .logo {
     width: 10%;
     margin-right: 50%;
   }
