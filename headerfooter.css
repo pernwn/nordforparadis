@@ -34,8 +34,6 @@ header {
   text-decoration: none;
 }
 
-
-
 #navLaptop .nav::before {
   content: "";
   position: absolute;
@@ -55,10 +53,12 @@ header {
 }
 
 
-#logo {
+.logo {
   width: 5%;
   margin-right: 50%;
 }
+
+
 
 /*FOOTER STYLES*/
 footer {
@@ -109,8 +109,10 @@ footer h3 {
   color: #F59C6B;
 }
 
+
+
 /*MOBIL HEADERFOOTER –– PASSER TIL iPHONE 12 mål: 390x844*/
-@media screen and (max-width:910px) {
+@media screen and (max-width:600px) {
   #navLaptop {
     display: none;
   }
@@ -126,7 +128,7 @@ footer h3 {
     height: 100%;
   }
 
-  #burger, #mobilLogo{
+  #burger, #mobilLogo, #close{
     animation-duration: 1s;
     animation-fill-mode: forwards;
   }
@@ -174,9 +176,9 @@ footer h3 {
     font-size: 12pt;
   }
 
-  @keyframes slideIn{
+  @keyframes slideIn{ /*TODO:*/
     from{
-      top:-100%;
+      top:-300%;
       opacity:0;
     }
     to{
@@ -191,7 +193,7 @@ footer h3 {
       opacity:1;
     }
     to{
-      top:-100%;
+      top:-300%;
       opacity:0;
     }
   }

@@ -1,8 +1,9 @@
 const hello = document.getElementById("hello");
 const nfp = document.getElementById("nfp");
 const burgerMenu = document.getElementById("burgerMenu");
-const burger = document.getElementById("burger");
+const burger = document.getElementById("navMobile");
 const logo = document.getElementById("mobilLogo");
+const x = document.getElementById("close");
 
 
 //Tryk på pil og scroll ned til om sektion
@@ -46,34 +47,63 @@ function changeTxt() {
 
 
 
-//Aktiverer burgermenu
-burgerMenu.style.display = "none";
+//Aktiverer burgermenu –– TODO: skal klikke 2 gange før det virker ordenligt OG efter første click er curser hele vejen 
+
+burgerMenu.style.visibility = 'hidden';
+x.style.visibility = "hidden";
+
+burger.addEventListener('click', menuFunction);
+x.addEventListener('click', menuFunction);
+
+let visible = false;
 
 function menuFunction() {
-    burgerMenu.style.display = "flex";
-    burgerMenu.style.animationName = "slideIn";
+    if (visible == false) {
+        x.style.visibility = 'hidden';
+        burger.style.visibility = 'visible';
 
-    burger.style.visibility = "hidden";
-    burger.style.animationName = "slideOut";
+        burgerMenu.style.animationName = 'slideOut';
 
-    logo.style.visibility = "hidden"
-    logo.style.animationName = "slideOut";
+        logo.style.visibility = 'visible';
+        logo.style.animationName = 'slideIn';
+        
+        visible = true;
+
+
+    } else {
+        x.style.visibility = 'visible';
+        burger.style.visibility = 'hidden';
+
+        burgerMenu.style.visibility = 'visible';
+        burgerMenu.style.animationName = "slideIn";
+        
+        logo.style.visibility = 'hidden';
+        logo.style.animationName = 'slideOut';
+
+        visible = false;
+    }
 
 
 }
 
-//Fjerner burgermenu
-function reload(){
-    burgerMenu.style.animationName = "slideOut";
+//x.addEventListener('click', reload);
 
-    burger.style.visibility = "visible";
-    burger.style.animationName = "slideIn";
+//Fjerner burgermenu TODO:
 
-    logo.style.visibility = "visible"
-    logo.style.animationName = "slideIn";
+function reload() {
+    window.location = window.location;
+    
+    
+    burgerMenu.style.animationName = 'slideOut';
 
-  
+    burger.style.visibility = 'visible';
+    burger.style.animationName = 'slideIn';
+
+    logo.style.visibility = 'visible';
+    logo.style.animationName = 'slideIn';
+
 }
+
 
 
 
