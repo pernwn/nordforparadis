@@ -1,12 +1,13 @@
 const hello = document.getElementById("hello");
 const nfp = document.getElementById("nfp");
-const burger = document.querySelector("fa-solid");
+const burgerMenu = document.getElementById("burgerMenu");
 
 
 //Tryk på pil og scroll ned til om sektion
 function scrollDown() {
     window.location = "#om";
 }
+
 
 //VELKOMST AFHÆNGIG AF TID PÅ DAGEN – https://www.studentstutorial.com/javascript/javascript-wish-as-per-time.php / https://www.w3schools.com/js/tryit.asp?filename=tryjs_elseif 
 setTimeout(greetMe);
@@ -42,12 +43,19 @@ function changeTxt() {
 }
 
 
+//Aktiverer burgermenu
+burgerMenu.style.display = "none";
 
-
-//Aktiverer burgermenu TODO:
 function menuFunction() {
-    alert("menufunction called!");
-    location.replace("./burgermenu.html");
+    burgerMenu.style.display = "flex";
+    burgerMenu.style.animationName = "slideIn";
+}
+
+//Fjerner burgermenu
+function reload(){
+    burgerMenu.style.animationName = "slideOut";
+
+  
 }
 
 
