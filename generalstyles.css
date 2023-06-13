@@ -97,16 +97,17 @@ footer a {
     border: 1px solid transparent;
 
     cursor: pointer;
+    
 }
 
 /*MOBIL*/
-@media screen and (max-width:910px) {
+@media screen and (max-width:600px) {
     #navLaptop {
-        display: block;
+        display: none;
     }
 
     #navMobile {
-        display: none;
+        display: block;
     }
 
     main {
@@ -116,7 +117,7 @@ footer a {
 
 
     main h1 {
-        font-size: 1em;
+        font-size: 1.2em;
         margin-bottom: 5px;
         line-height: 20px;
 
@@ -132,7 +133,7 @@ footer a {
 
     main p,
     footer p {
-        font-size: .6em;
+        font-size: 0.7em;
         font-weight: 400;
 
     }
@@ -144,9 +145,9 @@ footer a {
 
     .btn,
     .artistMere {
-        border-radius: 7px;
-        font-size: 1em;
-        padding: 10px;
+        border-radius: 9px;
+        font-size: 0.8em;
+        padding: 9px;
 
     }
 

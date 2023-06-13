@@ -52,9 +52,32 @@
 
 <body>
     <header>
+        <!--Tilføjelse af responsive-->
+        <nav id="navMobile">
+            <div class="logo" id="mobilLogo"><a href="index.html"><img src="images/misc/nfplogomobil-lys.png"
+                        alt="NFP logo"></a></div>
+
+            <i id="burger" class="fa-solid fa-bars fa-2x" style="color: #dce5e2;" onclick="menuFunction()"></i>
+      
+
+            <section id="burgerMenu">
+                <i id="close" class="fa-solid fa-xmark fa-2x" style="color: #dce5e2;" onclick="reload()"></i>
+                <div id="logoNav"><a href="index.html"><img src="images/misc/nfplogomobil-lys.png" alt="NFP logo"></a>
+                </div>
+                <a class="nav" href="kontakt.html">Booking</a>
+                <a class="nav" href="artister.html">Artister</a>
+                <a class="nav" href="omos.html">Om os</a>
+                <a class="nav" href="faq.html">faq</a>
+                <a class="nav" href="aftercare.html">Aftercare</a>
+
+            </section>
+
+
+        </nav>
+
         <!--ÆNDRING: ekstra link, så logo flyttet til venstre-->
         <nav id="navLaptop">
-            <div id="logo"><a href="index.html"><img src="images/misc/NFP-logolys-laptop.webp" alt="NFP logo"></a></div>
+            <div class="logo"><a href="index.html"><img src="images/misc/nfplogolys.png" alt="NFP logo"></a></div>
 
             <a class="nav" href="kontakt.html">Booking</a>
             <a class="nav" href="artister.html">Artister</a>
@@ -171,14 +194,13 @@
     </main>
 
     <footer>
-        <div class="åbningsTiderFooter">
+        <div>
             <h3>Åbningstider</h3>
             <p>Hverdage kl. 10-15</p>
         </div>
 
-        <div class="kontaktFooter">
+        <div>
             <h3>Kontakt</h3>
-            <p>nfp@tattoo.com</p>
             <p>Tlf.<a href="tel:+4526154712">+45 2615 4712</a></p>
             <p>Høegh-Guldbergs Gade 37, kl, 8000 Aarhus C</p>
             <p>CVR: 43619144</p>
@@ -186,7 +208,7 @@
 
 
         <div>
-            <div class="harDuSpørgsmålFooter">
+            <div>
                 <h3>Har du spørgsmål?</h3>
                 <p>Se gerne om svaret på dit spørgsmål står i vores FAQ.</p>
                 <p>Hvis ikke skal du være velkommen til at kontakte os.</p>
@@ -200,7 +222,7 @@
         </div>
 
         <div id="footerLogo">
-            <img src="images/misc/NFP-logolys-laptop.webp" alt="footerlogo">
+            <img src="images/misc/nfplogolys.png" alt="footerlogo">
         </div>
 
     </footer>

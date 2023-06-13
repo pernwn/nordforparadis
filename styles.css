@@ -304,7 +304,6 @@ img {
 }
 
 .artistTxtContainer {
-    visibility: visible;
     position: absolute;
     text-align: center;
 
@@ -327,7 +326,6 @@ img {
     background-blend-mode: overlay;
     background-size: 100% 90%;
 
-
     padding: 15%;
 
     text-align: center;
@@ -342,6 +340,7 @@ img {
 #besked .btn {
     position: relative;
     bottom: 2em;
+    
 }
 
 /*MOBIL*/
@@ -349,8 +348,8 @@ img {
     /*TOPVIDEO*/
 
     #frontVidContainer .btn {
-        top: 12em;
-        font-size: 8pt;
+        top: 9.5em;
+        font-size: 0.8em;
 
         padding: 5px 10px;
     }
@@ -393,19 +392,23 @@ img {
 
     /*OM OS SEKTION*/
     #om {
-        padding: 10% 8%;
+        padding: 15% 10%;
+        flex-direction: column;
+
+        text-align: center;
 
     }
 
     #om>div:nth-child(2) {
-        width: 150%;
+        width: 100%;
         padding-left: 0%;
   
     }
 
     #om>div:nth-child(2) h1,
     #besked h1 {
-        margin-bottom: 10%;
+        margin-bottom: 5%;
+
     }
 
     #om>div:nth-child(2) p,
@@ -413,11 +416,17 @@ img {
         margin-bottom: 10%;
     }
 
+    #om .btn{
+        font-size: 0.6em;
+    }
+
 
     #shop {
         top:0em;
         border-radius: 12px;
         width:80%;
+        margin-bottom:2em;
+        left:10%;
  
     }
 
@@ -432,7 +441,7 @@ img {
     }
 
     #artistKort div {
-        margin: 50px 100px;
+        margin: 50px 200px;
         width: 80%;
     }
 
@@ -445,13 +454,19 @@ img {
     }
 
     .artist {
+        width:30%;
         border-radius: 20px 20px 5px 5px;
-        background-color: #DCE5E2;
+        
+    }
+
+    .artist img{
+        border-radius: 20px 20px 5px 5px;
     }
 
     .artistMere{
         opacity: 1;
-        top: 100%;
+        top: 95%;
+   
     }
 
 
@@ -461,13 +476,15 @@ img {
     }
 
     .artist>h2 {
+        font-size:18pt;
         top: 40%;
         line-height: 1em;
 
     }
 
     .artistTxtContainer {
-        padding:0% 20%;
+        bottom:1em;
+        padding:0% 25%;
         font-size: 13pt;
 
     }
@@ -475,8 +492,8 @@ img {
 
     /*KONTAKT OS SEKTION*/
     #besked {
-        background-size: 100% 85%;
-        padding: 20%;
+        background-size: 100% 90%;
+        padding: 17%;
     }
 
     #besked h1{

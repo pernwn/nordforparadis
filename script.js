@@ -47,63 +47,28 @@ function changeTxt() {
 
 
 
-//Aktiverer burgermenu –– TODO: skal klikke 2 gange før det virker ordenligt OG efter første click er curser hele vejen 
+//Aktiverer burgermenu 
+burgerMenu.style.visibility = "hidden";
 
-burgerMenu.style.visibility = 'hidden';
-x.style.visibility = "hidden";
-
-burger.addEventListener('click', menuFunction);
-x.addEventListener('click', reload);
-
-let visible = false;
 
 function menuFunction() {
-    if (visible == false) {
-        x.style.visibility = 'hidden';
-        burger.style.visibility = 'visible';
+    burgerMenu.style.visibility = "visible";
+    burgerMenu.style.animationName = "slideIn";
 
-        burgerMenu.style.animationName = 'slideOut';
-
-        logo.style.visibility = 'visible';
-        logo.style.animationName = 'slideIn';
-        
-        visible = true;
-
-
-    } else {
-        x.style.visibility = 'visible';
-        burger.style.visibility = 'hidden';
-
-        burgerMenu.style.visibility = 'visible';
-        burgerMenu.style.animationName = "slideIn";
-        
-        logo.style.visibility = 'hidden';
-        logo.style.animationName = 'slideOut';
-
-
-        visible = false;
-
-    }
-
+    burger.style.visibility = "hidden";
+    logo.style.visibility = "hidden";
 
 }
 
-//x.addEventListener('click', reload);
 
-//Fjerner burgermenu TODO:
-
+//Fjerner burgermenu
 function reload() {
-
-    window.location = window.location;
+    burgerMenu.style.animationName = "slideOut";//virker ikke??
+    burgerMenu.style.visibility = "hidden";
     
-    /*
-    burgerMenu.style.animationName = 'slideOut';
 
-    burger.style.visibility = 'visible';
-    burger.style.animationName = 'slideIn';
-
-    logo.style.visibility = 'visible';
-    logo.style.animationName = 'slideIn';*/
+    burger.style.visibility = "visible";
+    logo.style.visibility = "visible";
 
 }
 
