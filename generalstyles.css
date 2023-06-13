@@ -125,7 +125,7 @@ footer a {
     main h2,
     footer h3,
     main h3 {
-        font-size: 0.8em;
+        font-size: 1em;
         line-height: 15px;
 
     }
@@ -145,8 +145,8 @@ footer a {
     .btn,
     .artistMere {
         border-radius: 7px;
-        font-size: 5pt;
-        padding: 7px;
+        font-size: 1em;
+        padding: 10px;
 
     }
 

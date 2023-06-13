@@ -230,7 +230,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    perspective: 1000px;
+
 
     margin: 40px 30px 20px 30px;
 
@@ -377,8 +377,9 @@ img {
     /*PARALLAX*/
     #roomTat {
         /*img used –– TODO: NYT BILLEDE*/
-        background-image: url(images/lokale/rasshygge2.webp);
+        background-image: url(images/lokale/atomkraft-nej.jpg);
         min-height: 200px;
+
 
     }
 
@@ -425,137 +426,71 @@ img {
     }
 
     /*ARTISTERNE*/
-    #artister {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10%;
-        padding-top: 12%;
-
-        text-align: center;
-        height: 10%;
-
-
-        background-image: url(images/pynt/coconut.png), url(images/pynt/bg.png);
-        background-repeat: no-repeat;
-        background-blend-mode: overlay;
-        background-size: cover;
-
-    }
 
     #artister h1 {
         margin-bottom: 5%;
     }
 
     #artistKort div {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        perspective: 1000px;
-
-        margin: 40px 30px 20px 30px;
-
+        margin: 50px 100px;
         width: 80%;
-
-
     }
 
 
     .indivArtist {
         position: relative;
-        width: 50%;
-    }
-
-    .artist img {
-        opacity: 1;
-        display: block;
-        width: 100%;
-        height: auto;
-        transition: .5s ease;
-        backface-visibility: hidden;
-
-        border-radius: 30px 30px 10px 10px;
-
+        display:flex;
+        flex-direction: row;
+        width: 40%;
     }
 
     .artist {
-        border-radius: 30px 30px 10px 10px;
+        border-radius: 20px 20px 5px 5px;
         background-color: #DCE5E2;
     }
 
-    .artistMere {
-        transition: .5s ease;
-        opacity: 0;
-        position: absolute;
-        top: 48%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-
-        padding: 4% 6%;
-    }
-
-
-    /*Hover på element 1, men andet element 2 ændres – https://codepen.io/kvana/pen/Ndgwebp*/
-    .indivArtist:hover .artist img,
-    .indivArtist:hover .artist h2 {
-        opacity: 0.7;
-    }
-
-    /*Hover på element 1, men andet element 2 ændres – https://codepen.io/kvana/pen/Ndgwebp*/
-    .indivArtist:hover .artistMere {
+    .artistMere{
         opacity: 1;
+        top: 100%;
     }
+
 
     #artistKort {
-        position: relative;
-        display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
     }
 
     .artist>h2 {
-        color: #DCE5E2;
-        font-size: 25pt;
+        top: 40%;
+        line-height: 1em;
 
-        position: absolute;
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%, -50%);
     }
 
     .artistTxtContainer {
-        visibility: visible;
-        position: absolute;
-        text-align: center;
-
-        color: #4D7373;
+        padding:0% 20%;
+        font-size: 13pt;
 
     }
-
-    .artistTxtContainer p {
-        padding-top: 1em;
-        text-align: center;
-
-        color: #4D7373;
-    }
-
-
 
 
     /*KONTAKT OS SEKTION*/
     #besked {
-        background-size: 100% 80%;
-        padding: 15%;
+        background-size: 100% 85%;
+        padding: 20%;
+    }
+
+    #besked h1{
+        margin-bottom: 1px;
     }
 
     #besked p {
-        padding: 5% 20%;
+        padding: 10% 2%;
     }
 
     #besked .btn {
         position: relative;
-        bottom: 2em;
+     
+        padding:7px;
+        font-size: 9pt;
     }
 }
