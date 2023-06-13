@@ -53,7 +53,7 @@ burgerMenu.style.visibility = 'hidden';
 x.style.visibility = "hidden";
 
 burger.addEventListener('click', menuFunction);
-x.addEventListener('click', menuFunction);
+x.addEventListener('click', reload);
 
 let visible = false;
 
@@ -80,7 +80,9 @@ function menuFunction() {
         logo.style.visibility = 'hidden';
         logo.style.animationName = 'slideOut';
 
+
         visible = false;
+
     }
 
 
@@ -91,16 +93,17 @@ function menuFunction() {
 //Fjerner burgermenu TODO:
 
 function reload() {
+
     window.location = window.location;
     
-    
+    /*
     burgerMenu.style.animationName = 'slideOut';
 
     burger.style.visibility = 'visible';
     burger.style.animationName = 'slideIn';
 
     logo.style.visibility = 'visible';
-    logo.style.animationName = 'slideIn';
+    logo.style.animationName = 'slideIn';*/
 
 }
 
