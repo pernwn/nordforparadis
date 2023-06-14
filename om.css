@@ -119,3 +119,53 @@ main>div h1 {
 #vaerdier div:first-child {
     order: 2;
 }
+
+/*MOBIL*/
+@media screen and (max-width:500px) {
+    #top {
+        /*specific height*/
+        min-height: 300px;
+        background-attachment: scroll;
+    }
+    
+    main>div h1 {
+        font-size: 25pt;
+    }
+    
+    /*STARTEN*/
+    #start,
+    #vaerdier,
+    #drommen {
+        flex-direction: column;
+        text-align: center;
+    
+        padding: 5%;
+    }
+    
+    #start div:first-child,
+    #vaerdier div:first-child,
+    #drommen div:first-child {
+        width: 90%;
+    
+    }
+    
+    #start img,
+    #vaerdier img,
+    #drommen img {
+        max-width: 100%;
+        border-radius: 20px;
+    }
+    
+
+    #start div:nth-child(2),
+    #vaerdier div:nth-child(2),
+    #drommen div:nth-child(2) {
+        width: 100%;
+        padding: 2em;
+    }
+    
+    
+    #vaerdier div:first-child {
+        order: 1;
+    }
+}

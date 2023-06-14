@@ -2,13 +2,6 @@ body {
   background-color: #DCE5E2;
 }
 
-main {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 5% 2% 15% 2%;
-}
-
 /*NAV A STREG UNDER AKTIV SIDE*/
 #navLaptop #navKontakt {
   position: relative;
@@ -37,11 +30,12 @@ main {
 }
 
 /*INDHOLDET PÅ SIDEN*/
-#indhold {
+main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding-left: 10%;
-  padding-top: 5%;
+  align-items: center;
+
 
   text-align: center;
 }
@@ -79,7 +73,7 @@ main {
 }
 
 #oplysninger p:nth-child(4) {
-  margin-bottom: 20px;
+  margin-bottom: 10%;
 }
 
 #oplysninger p>a {
