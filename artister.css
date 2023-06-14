@@ -52,3 +52,17 @@
   padding: 15% 10%;
 
 }
+
+/*MOBIL*/
+@media screen and (max-width:500px) {
+  #artisterne {
+    /*specific height*/
+    min-height: 250px;
+    background-attachment: scroll;
+  }
+
+  #artisterne h1{
+    font-size: 2em;
+  }
+
+}
