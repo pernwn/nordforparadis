@@ -340,11 +340,11 @@ img {
 #besked .btn {
     position: relative;
     bottom: 2em;
-    
+
 }
 
 /*MOBIL*/
-@media screen and (max-width:910px) {
+@media screen and (max-width:500px) {
     /*TOPVIDEO*/
 
     #frontVidContainer .btn {
@@ -361,13 +361,13 @@ img {
 
 
     #hello {
-        top:40%;
+        top: 40%;
         font-size: 20pt;
 
     }
 
     #nfp {
-        top:35%;
+        top: 35%;
         font-size: 20pt;
         line-height: 1.2em;
     }
@@ -375,19 +375,21 @@ img {
 
     /*PARALLAX*/
     #roomTat {
-        /*img used –– TODO: NYT BILLEDE*/
+        /*img used*/
         background-image: url(images/lokale/atomkraft-nej.jpg);
-        min-height: 200px;
+        min-height: 300px;
 
 
+        background-attachment:scroll;
     }
 
     #stemningsBilleder {
-        /*img used --- TODO: NY BILLEDE*/
+        /*img used*/
         background-image: url(images/lokale/lokale3.webp);
 
         /*specific height*/
         min-height: 300px;
+        background-attachment:scroll;
     }
 
     /*OM OS SEKTION*/
@@ -402,7 +404,7 @@ img {
     #om>div:nth-child(2) {
         width: 100%;
         padding-left: 0%;
-  
+
     }
 
     #om>div:nth-child(2) h1,
@@ -416,22 +418,22 @@ img {
         margin-bottom: 10%;
     }
 
-    #om .btn{
+    #om .btn {
         font-size: 0.6em;
     }
 
 
     #shop {
-        top:0em;
+        top: 0em;
         border-radius: 12px;
-        width:80%;
-        margin-bottom:2em;
-        left:10%;
- 
+        width: 80%;
+        margin-bottom: 2em;
+        left: 10%;
+
     }
 
     #roomPaintings {
-      display: none;
+        display: none;
     }
 
     /*ARTISTERNE*/
@@ -442,31 +444,31 @@ img {
 
     #artistKort div {
         margin: 50px 200px;
-        width: 80%;
+        width: 65%;
     }
 
 
     .indivArtist {
         position: relative;
-        display:flex;
+        display: flex;
         flex-direction: row;
         width: 40%;
     }
 
     .artist {
-        width:30%;
+        width: 30%;
         border-radius: 20px 20px 5px 5px;
-        
+
     }
 
-    .artist img{
+    .artist img {
         border-radius: 20px 20px 5px 5px;
     }
 
-    .artistMere{
+    .artistMere {
         opacity: 1;
         top: 95%;
-   
+
     }
 
 
@@ -476,15 +478,15 @@ img {
     }
 
     .artist>h2 {
-        font-size:18pt;
+        font-size: 18pt;
         top: 40%;
         line-height: 1em;
 
     }
 
     .artistTxtContainer {
-        bottom:1em;
-        padding:0% 25%;
+        bottom: 1em;
+        padding: 0% 17%;
         font-size: 13pt;
 
     }
@@ -496,7 +498,7 @@ img {
         padding: 17%;
     }
 
-    #besked h1{
+    #besked h1 {
         margin-bottom: 1px;
     }
 
@@ -506,8 +508,8 @@ img {
 
     #besked .btn {
         position: relative;
-     
-        padding:7px;
+
+        padding: 7px;
         font-size: 9pt;
     }
 }

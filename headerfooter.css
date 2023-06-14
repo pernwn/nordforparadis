@@ -112,7 +112,7 @@ footer h3 {
 
 
 /*MOBIL HEADERFOOTER –– PASSER TIL iPHONE 12 mål: 390x844*/
-@media screen and (max-width:600px) {
+@media screen and (max-width:500px) {
   #navLaptop {
     display: none;
   }

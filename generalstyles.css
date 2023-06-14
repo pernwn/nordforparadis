@@ -11,10 +11,6 @@ html {
     max-width: 100%;
 }
 
-#navLaptop {
-    display: block;
-}
-
 #navMobile {
     display: none;
 }
@@ -101,13 +97,13 @@ footer a {
 }
 
 /*MOBIL*/
-@media screen and (max-width:600px) {
+@media screen and (max-width:500px) {
     #navLaptop {
         display: none;
     }
 
     #navMobile {
-        display: block;
+        display: flex;
     }
 
     main {
