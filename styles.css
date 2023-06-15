@@ -28,6 +28,7 @@ img {
     color: #DCE5E2;
     background-color: #F59C6B;
     border: 1px solid transparent;
+    transition: 1s ease;
 
 
 }
