@@ -168,4 +168,8 @@ main>div h1 {
     #vaerdier div:first-child {
         order: 1;
     }
+
+    #start h2{
+        line-height: 1.5em;
+    }
 }

@@ -82,7 +82,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 80%;
+  width: 70%;
 
 }
 
@@ -90,7 +90,7 @@ body {
   margin: 15px;
   border-radius: 10px;
   opacity: .8;
-  width:40%;
+  width:100%;
 
 
   transition: .5s ease-in-out;
@@ -111,14 +111,9 @@ body {
 
   text-align: center;
 
-  /*img used*/
-  background-image: url(images/lokale/bgplante2.JPG), url(images/pynt/bg.png);
 
   height: 700px;
-  /*parallax scrolling effect*/
-  background-blend-mode: overlay;
-  background-repeat: no-repeat;
-  background-size: 100% 90%;
+
 
 }
 
@@ -143,4 +138,80 @@ body {
 
 #bg-text p {
   margin-bottom: 10px;
+}
+
+@media screen and (max-width:500px) {
+  /*Big photo*/
+#bigPhoto {
+  /*specific height*/
+  min-height: 300px;
+  background-attachment:scroll;
+
+}
+
+/*Overskrift*/
+#bigPhoto h1 {
+  font-size: 25pt;
+}
+
+/*Lidt om artisten, billede og styling af billede og tekst*/
+#artist {
+  flex-direction: column;
+  padding: 12%;
+}
+
+#artist img {
+  display:none;
+}
+
+#artistTekst {
+  padding: 2%;
+}
+
+#artist p {
+  padding-bottom: 5%;
+}
+
+
+/*Billede galleri, styling og hover effekt*/
+#billedeGalleri {
+  padding: 15% 5%;
+}
+
+#billedeGalleri div {
+  padding:0% 14%;
+  width: 55%;
+}
+
+#billedeGalleri img {
+  margin: 10px;
+  border-radius: 8px;
+  opacity: 1;
+
+}
+
+
+/*Sidste sektion på siden med blurred billede og tekst*/
+
+#bg {
+  height: 550px;
+
+
+}
+
+/*Teksten på baggrunden*/
+#bg-text {
+
+  top: 45%;
+
+  padding: 0% 2%;
+
+
+
+}
+
+#bg-text>div {
+  padding: 5% 10% 0% 10%;
+}
+
 }

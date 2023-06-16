@@ -20,7 +20,7 @@ function greetMe() {
 
     const time = new Date().getHours();
     let greeting;
-    if (time < 06) {
+    if (time < 6) {
         greeting = "Godnat!";
     } else if (time < 10) {
         greeting = "Godmorgen!";
@@ -46,7 +46,6 @@ function changeTxt() {
 }
 
 
-
 //Aktiverer burgermenu 
 burgerMenu.style.visibility = "hidden";
 
@@ -63,8 +62,8 @@ function menuFunction() {
 
 //Fjerner burgermenu
 function reload() {
-    burgerMenu.style.animationName = "slideOut";//virker ikke??
     burgerMenu.style.visibility = "hidden";
+    burgerMenu.style.animationName = "slideOut";
     
 
     burger.style.visibility = "visible";

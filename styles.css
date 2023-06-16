@@ -28,6 +28,7 @@ img {
     color: #DCE5E2;
     background-color: #F59C6B;
     border: 1px solid transparent;
+    transition: 1s ease;
 
 
 }
@@ -340,7 +341,6 @@ img {
 #besked .btn {
     position: relative;
     bottom: 2em;
-
 }
 
 /*MOBIL*/
@@ -348,8 +348,8 @@ img {
     /*TOPVIDEO*/
 
     #frontVidContainer .btn {
-        top: 9.5em;
-        font-size: 0.8em;
+        top: 12em;
+        font-size: 0.6em;
 
         padding: 5px 10px;
     }
@@ -437,6 +437,10 @@ img {
     }
 
     /*ARTISTERNE*/
+    #artister{
+        margin-bottom:25%;
+    }
+
     #artister h1 {
         margin-bottom: 5%;
     }
@@ -478,14 +482,14 @@ img {
 
     .artist>h2 {
         font-size: 18pt;
-        top: 40%;
+        top: 30%;
         line-height: 1em;
 
     }
 
     .artistTxtContainer {
-        bottom: 1em;
-        padding: 0% 17%;
+        bottom: .5em;
+        padding: 0% 16%;
         font-size: 13pt;
 
     }
