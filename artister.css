@@ -50,8 +50,15 @@
 #artister {
   background-size: 100% 90%;
   padding: 15% 10%;
-
 }
+
+#artistKort{
+  display:inline-grid;
+  grid-template-columns: auto auto auto;
+}
+
+
+
 
 /*MOBIL*/
 @media screen and (max-width:500px) {
@@ -63,6 +70,10 @@
 
   #artisterne h1{
     font-size: 2em;
+  }
+
+  #artistKort{
+    display:flex;
   }
 
 }
