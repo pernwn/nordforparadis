@@ -136,6 +136,7 @@ main>div h2 {
     min-height: 300px;
     background-attachment: scroll;
   }
+
   
   /*TEKST OVENPÅ BILLEDE*/
   main>div h1 {
@@ -174,13 +175,12 @@ main>div h2 {
   
   /*KONTAKT*/
   #kontaktOplysninger {
-    height: 400px;
+    height: 450px;
     margin-top:10%;  
   }
   
   #kontaktOplysninger>div {
     width: 35%;
-    margin-bottom: 5%;
   }
 
   #kontaktOplysninger p {

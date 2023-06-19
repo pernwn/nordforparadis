@@ -209,15 +209,13 @@ img {
     flex-direction: column;
     align-items: center;
     padding: 10%;
-    padding-top: 12%;
+
 
     text-align: center;
-    height: 10%;
 
-
-    background-image: url(images/pynt/coconut.png), url(images/pynt/bg.png);
+    background-image: url(images/pynt/waterfall.jpg), url(images/pynt/bg.png);
     background-repeat: no-repeat;
-    background-blend-mode: overlay;
+    background-blend-mode:overlay;
     background-size: cover;
 
 }
@@ -233,9 +231,7 @@ img {
     align-items: center;
 
 
-    margin: 40px 30px 20px 30px;
-
-    width: 80%;
+    margin: 0% 6%;
 
     transition: .5s ease-in-out;
 
@@ -243,9 +239,14 @@ img {
 
 
 .indivArtist {
-    position: relative;
-    width: 50%;
-}
+    width:50%;
+    border-radius: 30px 30px 10px 10px;
+  
+    text-align: center;
+  
+    background-color: rgba(77, 115, 115,0.8);
+    color: #DCE5E2;
+  }
 
 .artist img {
     opacity: 1;
@@ -255,12 +256,13 @@ img {
     transition: .5s ease;
     backface-visibility: hidden;
 
-    border-radius: 30px 30px 10px 10px;
+    border-radius: 30px 30px 0px 0px;
 
 }
 
 .artist {
-    border-radius: 30px 30px 10px 10px;
+    width:100%;
+    border-radius: 30px 30px 0px 0px;
     background-color: black;
 }
 
@@ -268,7 +270,7 @@ img {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
-    top: 48%;
+    top:100%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -299,16 +301,17 @@ img {
     font-size: 25pt;
 
     position: absolute;
-    top: 35%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .artistTxtContainer {
+    padding:15% 0% 20% 0%;
+
     position: absolute;
     text-align: center;
-
-    color: #4D7373;
+    color: #DCE5E2;
 
 }
 
@@ -316,7 +319,8 @@ img {
     padding-top: 1em;
     text-align: center;
 
-    color: #4D7373;
+
+    color: #DCE5E2;
 }
 
 
@@ -437,17 +441,15 @@ img {
     }
 
     /*ARTISTERNE*/
-    #artister{
-        margin-bottom:25%;
-    }
 
     #artister h1 {
         margin-bottom: 5%;
     }
 
     #artistKort div {
-        margin: 50px 200px;
-        width: 65%;
+        margin:10%;
+        width:80%;
+
     }
 
 
@@ -455,22 +457,21 @@ img {
         position: relative;
         display: flex;
         flex-direction: row;
-        width: 40%;
+
     }
 
     .artist {
-        width: 30%;
-        border-radius: 20px 20px 5px 5px;
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
 
     }
 
     .artist img {
-        border-radius: 20px 20px 5px 5px;
+        border-radius: 20px 20px 0px 0px;
     }
 
     .artistMere {
         opacity: 1;
-        top: 95%;
 
     }
 
@@ -488,8 +489,7 @@ img {
     }
 
     .artistTxtContainer {
-        bottom: .5em;
-        padding: 0% 16%;
+        padding: 3%;
         font-size: 13pt;
 
     }
@@ -508,7 +508,7 @@ img {
 
     /*KONTAKT OS SEKTION*/
     #besked {
-        background-size: 100% 90%;
+        background-size: cover;
         padding: 17%;
     }
 

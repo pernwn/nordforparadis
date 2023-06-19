@@ -48,17 +48,44 @@
 
 /*ARTISTERNE*/
 #artister {
-  background-size: 100% 90%;
-  padding: 15% 10%;
+  background-size: 100% 95%;
+  padding-bottom:10%;
 }
 
-#artistKort{
-  display:inline-grid;
+#artistKort {
+  display: grid;
   grid-template-columns: auto auto auto;
+
 }
 
+#artistKort div{
+  margin:10%;
+  width:80%;
+}
 
+.indivArtist {
 
+  border-radius: 30px 30px 10px 10px;
+
+  text-align: center;
+
+  background-color: rgba(77, 115, 115,0.8);
+  color: #DCE5E2;
+
+}
+
+.artist>h2 {
+  top:50%;
+}
+
+.artistTxtContainer {
+  padding:5% 0%;
+}
+
+.artistMere{
+  top:58%;
+  padding:6% 8%;
+}
 
 /*MOBIL*/
 @media screen and (max-width:500px) {
@@ -68,12 +95,33 @@
     background-attachment: scroll;
   }
 
-  #artisterne h1{
+  #artisterne h1 {
     font-size: 2em;
   }
 
-  #artistKort{
-    display:flex;
+  #artistKort {
+    display: flex;
   }
+
+  #artistKort div{
+    margin:20% 0%;
+    width:100%;
+  }
+
+  #artister {
+    background-size: cover;
+    padding: 15% 10%;
+  }
+
+  .artistMere{
+    top:55%;
+  }
+
+  .artistTxtContainer {
+
+    padding:0% 10%;
+  }
+
+
 
 }
