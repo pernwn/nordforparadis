@@ -74,17 +74,12 @@
 
 }
 
-.artist>h2 {
-  top:50%;
-}
-
 .artistTxtContainer {
   padding:5% 0%;
 }
 
 .artistMere{
-  top:58%;
-  padding:6% 8%;
+  padding:10%;
 }
 
 /*MOBIL*/
@@ -99,13 +94,15 @@
     font-size: 2em;
   }
 
+
+
   #artistKort {
     display: flex;
   }
 
   #artistKort div{
-    margin:20% 0%;
-    width:100%;
+    margin:10% 0%;
+    width:90%;
   }
 
   #artister {
@@ -113,13 +110,16 @@
     padding: 15% 10%;
   }
 
-  .artistMere{
-    top:55%;
+  .artistTxtContainer {
+    padding:0% 5%;
   }
 
-  .artistTxtContainer {
+  .artistMere{
+    bottom:0%;
+  }
 
-    padding:0% 10%;
+  .artistTxtContainer p {
+    padding-bottom:35%;
   }
 
 
