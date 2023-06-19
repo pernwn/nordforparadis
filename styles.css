@@ -94,9 +94,6 @@ img {
     animation-fill-mode: forwards;
 }
 
-#nfp>i {
-    height: 10px;
-}
 
 
 @keyframes fadeIn {
