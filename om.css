@@ -161,7 +161,7 @@ main p {
     #vaerdier div:nth-child(2),
     #drommen div:nth-child(2) {
         width: 100%;
-        padding: 2em;
+        padding: 2em 1em;
     }
     
     

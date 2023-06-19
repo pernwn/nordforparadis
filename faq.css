@@ -51,7 +51,7 @@ main {
 }
 
 /*TEKST OVENPÅ BILLEDE*/
-main>div h1 {
+#faqBigPhoto h1 {
   position: absolute;
 
   top: 45%;
@@ -63,7 +63,7 @@ main>div h1 {
   text-transform: uppercase;
 }
 
-main>div h2 {
+#faqBigPhoto h2 {
   position: absolute;
 
   top: 55%;
@@ -139,12 +139,14 @@ main>div h2 {
 
   
   /*TEKST OVENPÅ BILLEDE*/
-  main>div h1 {
-    font-size: 25pt;
+  #faqBigPhoto h1 {
+    font-size: 2em;
+    padding-bottom:5%;
   }
   
-  main>div h2 {
+  #faqBigPhoto h2 {
     font-size: 10pt;
+    text-align: center;
   }
   
   /*SIDENS BESKRIVELSE*/
