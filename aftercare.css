@@ -1,37 +1,120 @@
-main {
-    padding-bottom: 10%;
+#navLaptop .nav:nth-child(6) {
+    position: relative;
+    color: #dce5e2;
+  }
+  
+  #navLaptop .nav:nth-child(6):before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #dce5e2;
+    transform: scaleX(1);
+    text-decoration: underline;
+  }
+
+/*Big photo*/
+#aftercare {
+    position: relative;
+    /*img used*/
+    background-image: url(images/lokale/aftercare.jpg);
+
+    /*specific height*/
+    min-height: 700px;
+
+
+    /*parallax scrolling effect*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-main div:nth-child(2) {
-    padding: 10%;
-}
+/*Overskrift*/
+#aftercare h1 {
+    position: absolute;
 
-main h2 {
-    margin-bottom: 1em;
-
-}
-
-main p {
-    color: #4D7373;
-}
-
-main h1{
-    font-size: 60pt;
+    color: #DCE5E2;
     text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    margin-top: 5%;
+    text-align: center;
+
+    font-size: 54pt;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
 }
 
-#forste,
-#efter,
-#helingsproces{
+#aftercareContainer {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding:10% 10% 0% 10%;
+
+}
+
+#aftercareContainer div{
+    padding:0% 18%;
+    margin-bottom:5%;
+}
+
+#aftercareContainer h2{
+    font-size: 18pt;
+}
+
+/*KONTAKT*/
+#kontaktOplysninger {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 3% 4% 3% 4%;
-    width: 40%;
+    height: 500px;
+  
+  }
+  
+  #kontaktOplysninger>div {
+    width: 12%;
+  }
+
+  /*MOBIL*/
+@media screen and (max-width:500px) {
+/*Big photo*/
+#aftercare {
+    /*specific height*/
+    min-height: 300px;
+    background-attachment: scroll;
+}
+
+/*Overskrift*/
+#aftercare h1 {
+font-size:2em;
+}
+
+#aftercareContainer{
+    padding:15% 5%;
+}
+
+#aftercareContainer div{
+    padding:5% 10%;
 
 }
 
+#aftercareContainer h2{
+    font-size: 14pt;
+    margin-bottom: 2%;
+}
+
+/*KONTAKT*/
+#kontaktOplysninger {
+    height: 400px;
+  
+  }
+  
+  #kontaktOplysninger>div {
+    width: 30%;
+  }
+}
