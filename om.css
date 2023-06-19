@@ -50,7 +50,7 @@ main p {
     background-size: cover;
 }
 
-main>div h1 {
+#top h1 {
     position: absolute;
 
     top: 50%;
@@ -128,7 +128,7 @@ main>div h1 {
         background-attachment: scroll;
     }
     
-    main>div h1 {
+   #top h1 {
         font-size: 2em;
     }
     
