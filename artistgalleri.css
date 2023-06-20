@@ -2,7 +2,11 @@ body {
   background-color: #DCE5E2;
 }
 
-/*Big photo*/
+main h1{
+  margin-bottom:2%;
+}
+
+/*Big photo for Rass*/
 #bigPhoto {
   position: relative;
   /*img used*/
@@ -20,7 +24,7 @@ body {
 }
 
 /*Overskrift*/
-#bigPhoto h1 {
+#overskrift {
   position: absolute;
 
   color: #DCE5E2;
@@ -33,6 +37,23 @@ body {
   transform: translate(-50%, -50%);
 
 
+}
+
+/*Big photo for Sabine*/
+#sabBigPhoto {
+  position: relative;
+  /*img used*/
+  background-image: url(images/portrætter/sabport.jpg);
+
+  /*specific height*/
+  min-height: 700px;
+
+
+  /*parallax scrolling effect*/
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*Lidt om artisten, billede og styling af billede og tekst*/
@@ -98,8 +119,11 @@ body {
 
 #billedeGalleri img:hover {
   opacity: 1;
+}
 
-
+#billedeGalleri h1{
+  margin-bottom:4%;
+  font-size:2.5em;
 }
 
 /*Sidste sektion på siden med blurred billede og tekst*/
@@ -142,7 +166,7 @@ body {
 
 @media screen and (max-width:500px) {
   /*Big photo*/
-#bigPhoto {
+#bigPhoto, #sabBigPhoto {
   /*specific height*/
   min-height: 300px;
   background-attachment:scroll;
@@ -150,8 +174,9 @@ body {
 }
 
 /*Overskrift*/
-#bigPhoto h1 {
+#overskrift {
   font-size: 25pt;
+  line-height: 1em;
 }
 
 /*Lidt om artisten, billede og styling af billede og tekst*/
@@ -179,8 +204,8 @@ body {
 }
 
 #billedeGalleri div {
-  padding:0% 14%;
-  width: 55%;
+  padding:2% 4% 0% 4%;
+  width: 100%;
 }
 
 #billedeGalleri img {
@@ -205,8 +230,6 @@ body {
   top: 45%;
 
   padding: 0% 2%;
-
-
 
 }
 
