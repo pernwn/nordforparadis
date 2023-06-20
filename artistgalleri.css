@@ -200,12 +200,12 @@ main h1{
 
 /*Billede galleri, styling og hover effekt*/
 #billedeGalleri {
-  padding: 15% 5%;
+  padding: 20%;
 }
 
 #billedeGalleri div {
   padding:2% 4% 0% 4%;
-  width: 100%;
+  width: 50%;
 }
 
 #billedeGalleri img {
